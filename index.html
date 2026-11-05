@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Invitation 💍</title>
+  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Amiri:wght@400;700&family=Great+Vibes&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <!-- ================= شاشة الستارة ================= -->
+  <div id="curtain-screen" class="screen active">
+    
+    <div class="curtain-center" id="curtainCenter">
+      <svg class="rings-icon" viewBox="0 0 100 100" fill="none" stroke="#ffd700" stroke-width="2">
+        <circle cx="40" cy="50" r="25"/>
+        <circle cx="60" cy="50" r="25"/>
+      </svg>
+      <h1 class="curtain-title" data-ar="فؤاد & هبة" data-en="Fouad & Heba">فؤاد & هبة</h1>
+      <p class="curtain-subtitle" data-ar="اضغط لفتح الدعوة" data-en="Click to open">اضغط لفتح الدعوة</p>
+    </div>
+
+    <!-- الستارة اليمين -->
+    <div class="curtain curtain-right" id="curtainRight">
+      <!-- زخرفة الستارة اليمين (أرابيسك من الزاوية) -->
+      <svg class="elegant-floral" viewBox="0 0 300 800" preserveAspectRatio="none">
+        <path d="M300,0 C200,100 150,300 250,500 C300,600 200,700 100,800" stroke="#ffd700" stroke-width="2" fill="none" opacity="0.6"/>
+        <path d="M300,0 C250,150 100,200 150,400 C200,600 50,700 0,800" stroke="#ffd700" stroke-width="1.5" fill="none" opacity="0.4"/>
+        <!-- أوراق صغيرة -->
+        <path d="M250,100 Q220,80 200,120 Q230,140 250,100 Z" fill="#ffd700" opacity="0.3"/>
+        <path d="M200,250 Q170,230 150,270 Q180,290 200,250 Z" fill="#ffd700" opacity="0.3"/>
+        <path d="M100,500 Q70,480 50,520 Q80,540 100,500 Z" fill="#ffd700" opacity="0.3"/>
+        <circle cx="250" cy="100" r="4" fill="#ffd700"/>
+        <circle cx="150" cy="400" r="4" fill="#ffd700"/>
+      </svg>
+    </div>
+
+    <!-- الستارة الشمال -->
+    <div class="curtain curtain-left" id="curtainLeft">
+      <!-- زخرفة الستارة الشمال (نفس الرسمة معكوسة) -->
+      <svg class="elegant-floral" viewBox="0 0 300 800" preserveAspectRatio="none">
+        <path d="M0,0 C100,100 150,300 50,500 C0,600 100,700 200,800" stroke="#ffd700" stroke-width="2" fill="none" opacity="0.6"/>
+        <path d="M0,0 C50,150 200,200 150,400 C100,600 250,700 300,800" stroke="#ffd700" stroke-width="1.5" fill="none" opacity="0.4"/>
+        <path d="M50,100 Q80,80 100,120 Q70,140 50,100 Z" fill="#ffd700" opacity="0.3"/>
+        <path d="M100,250 Q130,230 150,270 Q120,290 100,250 Z" fill="#ffd700" opacity="0.3"/>
+        <path d="M200,500 Q230,480 250,520 Q220,540 200,500 Z" fill="#ffd700" opacity="0.3"/>
+        <circle cx="50" cy="100" r="4" fill="#ffd700"/>
+        <circle cx="150" cy="400" r="4" fill="#ffd700"/>
+      </svg>
+    </div>
+
+    <div class="click-area" onclick="openCurtain()"></div>
+  </div>
+
+  <!-- ================= شاشة الكتاب ================= -->
+  <div id="book-screen" class="screen">
+    <div id="book">
+      
+            <div class="page active" id="page1">
+        <div class="invitation-card">
+
+          <!-- إطار القوس -->
+          <div class="arch-frame"></div>
+          
+                    <div class="bg-pattern"></div>
+          <!-- زخارف الأركان البيضاء -->
+                   <div class="arabesque-corner top-left"></div>
+          <div class="arabesque-corner top-right"></div>
+          <div class="arabesque-corner bottom-left"></div>
+          <div class="arabesque-corner bottom-right"></div>
+                    <div class="card-content">
+            <p class="event-title" data-ar="حفل زفاف" data-en="Wedding Ceremony">حفل زفاف</p>
+            
+            <h1 class="bride-name" data-ar="فؤاد & هبة" data-en="Fouad & Heba">فؤاد و هبة</h1>
+             <p class="date-text" data-ar="الحضور" data-en="waitting for you to join our Joy">ندعوكم لمشاركتنا الفرحه المنتظره  </p>
+            <p class="date-text" data-ar="١١ نوفمبر ٢٠٢٦" data-en="11 November 2026">١١ نوفمبر ٢٠٢٦</p>
+             <p class="date-text" data-ar="الأربعاء" data-en="Wednseday">الأربعاء </p>
+            <p class="date-text" data-ar="7 مساء" data-en="7 PM">7 مساء  </p>
+          </div>
+        </div>
+
+        <button class="next-btn" onclick="nextPage()">
+          <span data-ar="التالي" data-en="Next">التالي</span>
+          <span class="arrow">←</span>
+        </button>
+      </div>
+
+            <div class="page" id="page2">
+        <div class="simple-card">
+            <div class="arch-frame"></div>
+            <div class="bg-pattern"></div>
+          <!-- الزخارف -->
+          <div class="arabesque-corner top-left"></div>
+          <div class="arabesque-corner top-right"></div>
+          <div class="arabesque-corner bottom-left"></div>
+          <div class="arabesque-corner bottom-right"></div>
+          
+          <h2 data-ar="المكان" data-en="Location">المكان</h2>
+          <p data-ar="قاعة ألف ليله وليله " data-en="Alf Liela We Liela ">قاعة الف ليله وليله </p>
+          <p data-ar="الشهداء - المنوفيه" data-en="AlShohadaa - Menofia">المنوفيه -الشهداء </p>
+           <p data-ar="الشهداء - المنوفيه" data-en="AlShohadaa - Menofia">أمام محطة القطار </p>
+                             <!-- زر اللوكيشن الجديد -->
+          <a href="https://maps.app.goo.gl/mTwWMzDtN7m9qqyL6?g_st=aw" target="_blank" class="location-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span data-ar="اللوكيشن" data-en=" Location">اللوكيشن</span>
+          </a>
+        </div>
+        
+        <button class="next-btn" onclick="nextPage()">
+            <span data-ar="التالي" data-en="Next">التالي</span>
+            <span class="arrow">←</span>
+          </button>
+      </div>
+
+            <div class="page" id="page3">
+        <div class="simple-card">
+            <div class="arch-frame"></div>
+            <div class="bg-pattern"></div>
+          <!-- الزخارف -->
+          <div class="arabesque-corner top-left"></div>
+          <div class="arabesque-corner top-right"></div>
+          <div class="arabesque-corner bottom-left"></div>
+          <div class="arabesque-corner bottom-right"></div>
+
+          <h2 data-ar="باقي على الفرحة الكبيرة" data-en="Counting down to our joy">باقي على الفرحة الكبيرة</h2>
+          <div class="countdown" id="countdown">
+            <div><span id="days">0</span><small data-ar="يوم" data-en="Days">يوم</small></div>
+            <div><span id="hours">0</span><small data-ar="ساعة" data-en="Hours">ساعة</small></div>
+            <div><span id="minutes">0</span><small data-ar="دقيقة" data-en="Mins">دقيقة</small></div>
+            <div><span id="seconds">0</span><small data-ar="ثانية" data-en="Secs">ثانية</small></div>
+          </div>
+          
+        </div>
+        <button class="next-btn" onclick="nextPage()">
+            <span data-ar="التالي" data-en="Next">التالي</span>
+            <span class="arrow">←</span>
+          </button>
+      </div>
+
+            <!-- الصفحة الرابعة -->
+      <div class="page" id="page4">
+        <div class="simple-card">
+            <div class="arch-frame"></div>
+            <div class="bg-pattern"></div>
+          <!-- الزخارف -->
+          <div class="arabesque-corner top-left"></div>
+          <div class="arabesque-corner top-right"></div>
+          <div class="arabesque-corner bottom-left"></div>
+          <div class="arabesque-corner bottom-right"></div>
+
+          <h2 data-ar="نتشرف بحضوركم" data-en="We are honored">نتشرف بحضوركم</h2>
+          <p data-ar="وجودكم يكمل فرحتنا" data-en="Your presence completes our joy">وجودكم يكمل فرحتنا</p>
+          <p class="signature">Fouad & Heba</p>
+          
+        </div>
+        <button class="next-btn" onclick="location.reload()">
+            <span data-ar="من جديد" data-en="Restart">من جديد</span>
+            <span class="arrow">↻</span>
+          </button>
+      </div>
+
+    </div>
+  </div>
+
+  <audio id="bg-music" loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
